@@ -1,0 +1,107 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: system-ui;
+  text-align: center;
+  font-size: 3.0rem;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.product-details {
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.product-id,
+.product-name,
+.product-quantity,
+.product-description,
+.product-price {
+  margin: 0;
+}
+
+.product-delete-form {
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-radius: 0.6rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.product-id {
+  margin-bottom: 25px;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.product-quantity {
+  font-size: 2.0rem;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.product-description {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.product-price {
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 3.0rem;
+  text-align: right;
+}
+
+.product-price > span {
+  color: #e74c3c;
+}
+
+img {
+  width: 50vw;
+  height: auto;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.6rem;
+}
+
+form {
+  margin-top: 15px;
+  text-align: right;
+  display: inline-block;
+}
+
+button {
+  letter-spacing: 10px;
+  padding: 30px 60px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+}

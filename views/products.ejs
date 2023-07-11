@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Product List</h1>
+
+    <ul>
+      <% products.forEach(function(product) { %>
+      <li>
+        <div class="product-container">
+          <div class="product-image">
+            <img src="/images/<%= product.image %>" />
+          </div>
+
+          <div class="product-details">
+            <p class="product-id">Product ID: <%= product._id %></p>
+            <p class="product-name">Name: <%= product.name %></p>
+            <p class="product-description">
+              Description: <%= product.description %>
+            </p>
+            <p class="product-quantity">Quantity: <%= product.quantity %></p>
+            <p class="product-price"><span>Price:</span> $<%= product.price %></p>
+            <form
+              method="POST"
+              action="/products/<%= product._id %>?_method=DELETE"
+            >
+              <button type="submit">Delete</button>
+            </form>
+          </div>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <h1>Product List</h1>
+
+  <div>
+    <ul>
+      <% products.forEach(function(product) { %>
+        <li>
+          <div class="product-container">
+            <div class="product-image">
+              <img src="/images/<%= product.image %>">
+            </div>
+            <div class="product-details">
+              <p class="product-id">Product ID: <%= product._id %></p>
+              <p class="product-name">Name: <%= product.name %></p>
+              <p class="product-quantity">Quantity: <%= product.quantity %></p>
+              <p class="product-description">Description: <%= product.description %></p>
+              <form class="product-delete-form" method="POST" action="/products/<%= product._id %>?_method=DELETE">
+                <button type="submit">Delete</button>
+              </form>
+            </div>
+          </div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+  
+</body>
+</html> -->
