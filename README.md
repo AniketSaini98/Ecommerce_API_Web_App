@@ -28,13 +28,13 @@ STEPS TO DELETE A PRODUCT:
 3) Make a DELETE request.
 4) You will recieve a message saying deleted successfully.
 
-STEPS TO UPDATE THE QUANTITY OF A PRODUCT:
+STEPS TO UPDATE THE OF PRODUCT's DETAILS:
 1) Copy the object id of the product whose quantity you want to update
 2) Put the id after localhost:3000/products/
-3) After putting the id add /update_quantity/?number={x} in the url where x is the number by which you want to increase or decrease the quantity.
+3) After putting the id add /update_quantity/?number={x} in the url.
 4) the url should be looking like localhost:3000/products/{id}/update_quantity/?number={x}
 5) Make a POST request and you should get a message containing the update product
 
 
 # TECHSTACK
-Node.Js, MongoDB
+MongoDB, Express.js, Node.js
