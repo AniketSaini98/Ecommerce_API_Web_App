@@ -37,4 +37,8 @@ This is an E-commerce API made using Node.Js & MongoDB.
 
 
 # TECHSTACK
-MongoDB, Express.js, Node.js
+
+![MongoDB](assets/mongodb_icon.png)
+![Express JS](assets/express_icon.png)
+![Node JS](assets/node_icon.png)
+
